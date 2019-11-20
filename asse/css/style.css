@@ -1,0 +1,322 @@
+.body{
+	margin: 0;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #000;
+	-webkit-font-smoothing:
+	antialiased;
+
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+  	margin: 0;
+  }
+
+  p {
+	margin: 0 0 10px;
+}
+
+
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+.header{
+	width: 100%;
+    height: 100px;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 35px 0;
+
+	
+	
+
+
+}
+
+.nav{
+	display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.nav__link {
+	margin-left: 50px;
+
+	color: #000;
+	text-decoration: none;
+	opacity: .75;
+
+	transition: opacity .1s
+	linear;
+    
+}
+.nav__link:first-child {
+	margin-left: 0;
+}
+
+.nav__link:hover {
+	opacity: 1;
+	background-color: #e1d145;
+	padding: 5px 10px;
+	border-radius: 70px;
+	transition: color .2s linear;
+}
+
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align:center;
+
+	height: 750px;
+	padding-top: 100px;
+
+	background: url("intro-dance.jpg") center no-repeat /
+	cover;
+	
+}
+.intro__inner{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.intro__title{
+	margin:  170px 0 0;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 145px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro__subtitle {
+	margin: 30px 0 0;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	font-weight: 250;
+    color: #fff;
+    line-height: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.btn{
+	margin-top: 50px;
+	margin-left: 380px;
+	display:block;
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+	color: #000;
+	text-transform:uppercase;
+	text-decoration: none;
+	transition: background .1s
+	linear;
+}
+
+.btn--red {
+	width: 25%;
+	padding: 5px 10px;
+	border-radius: 70px;
+	background-color: #e1d145;
+
+}
+.btn--red:hover {
+	background-color: #e1d110;
+}
+
+.feat {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px 0;
+
+}
+
+.feat__item {
+	width: 33.33333%;
+	padding: 0 30px;
+	margin: 10px 0;
+
+	text-align: center;
+}
+
+.feat__icon {
+	margin-bottom: 10px;
+}
+
+.feat__title {
+	margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.feat__text {
+	font-size: 14px;
+	font-weight: 550;
+	font-family: 'Lato', sans-serif;
+
+}
+
+
+
+.port {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.port__item {
+	width: 25%;
+	height: 350px;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.port__item:hover .port__content {
+	opacity: 1;
+}
+
+
+.port__photo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate3d(-50%, -50%, 
+	0);
+}
+
+
+
+
+.port__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+   width: 100%;
+   height: 100%;
+
+   background-color: rgba(226, 210, 67, 
+   	.9);
+   opacity: 0;
+
+   text-align: center;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+
+   transition: opacity .2s linear;
+
+}
+
+
+.port__title {
+	margin-bottom: 5px;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+
+.port__text {
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+
+.team {
+	margin: 75px 0;
+}
+
+.team__inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team__item {
+	width: 25%;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+}
+
+
+.team__name {
+	margin-bottom: 5px;
+	font-size: 22px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	
+}
+
+.team__text {
+	font-size: 12px;
+	color: #000;
+	max-width: 170px;
+	font-weight: 600;
+}
+
+.team__prof {
+
+	color: #e1d145;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
